@@ -1,7 +1,9 @@
 import {httpBatchLink, loggerLink} from '@trpc/client';
 import {createTRPCNext} from '@trpc/next';
 import trpcOptions from 'prisma/trpcOptions';
-import {AppRouter} from 'server/routers/_app';
+import {appRouter} from 'server/routers/_app';
+
+type AppRouter = typeof appRouter;
 
 function getBaseUrl() {
   if (typeof window !== 'undefined')

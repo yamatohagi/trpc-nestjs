@@ -23,9 +23,6 @@ const prismaClientSingleton = () => {
       console.log(`🥰Params: ${e.params}`);
       console.log(`Duration: ${e.duration}ms🧐`);
 
-      if (e.duration > slowQueryThreshold) {
-        console.warn(`❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌Slow query detected: ${e.query}`);
-      }
     });
   }
 

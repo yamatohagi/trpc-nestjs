@@ -5,9 +5,9 @@ import {trpc} from 'src/utils/trpc';
 // sections
 
 export default function HomePage() {
-  const createTodo = trpc.todoRouter.createOne.useMutation();
+  const createTodo = trpc.todo.createOne.useMutation();
 
-  const todoList = trpc.todoRouter.findMany.useQuery({});
+  const todoList = trpc.todo.findMany.useQuery({});
   return (
     <>
       <Head>
