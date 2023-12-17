@@ -1,4 +1,0 @@
--- AlterTable
-ALTER TABLE "BusinessPeriod" ALTER COLUMN "year" DROP NOT NULL,
-ALTER COLUMN "start" DROP NOT NULL,
-ALTER COLUMN "end" DROP NOT NULL;

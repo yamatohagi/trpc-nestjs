@@ -5,7 +5,7 @@ const todoRouter = t.router({
   findMany: publicProcedure
     .input(
       z.object({
-        userId: z.string().optional().nullable(),
+        // userId: z.string().optional().nullable(),
       })
     )
     .query(async ({ctx, input}) => {
@@ -15,7 +15,6 @@ const todoRouter = t.router({
   createOne: publicProcedure
     .input(
       z.object({
-        userId: z.string().optional().nullable(),
         title: z.string(),
       })
     )

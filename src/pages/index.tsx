@@ -23,7 +23,13 @@ export default function HomePage() {
       >
         create
       </button>
-      <ul>{todoList.data?.map((todo) => <li key={todo.id}>{todo.title}</li>)}</ul>
+      <ul
+        style={{
+          color: 'red',
+        }}
+      >
+        {todoList.data?.map((todo) => <li key={todo.id}>{todo.title}</li>)}
+      </ul>
     </>
   );
 }
