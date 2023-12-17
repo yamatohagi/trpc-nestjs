@@ -1,0 +1,31 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("POSTGRES_PRISMA_URL")
+}
+
+//あとでindex絶対はって------------------------------------------全部ね
+model Todo {
+  id    Int    @id @default(autoincrement())
+  title String
+}
+
+//展望　山頂
+
+generator zod {
+  provider               = "zod-prisma-types"
+  output                 = "../generated/schema/zod"
+  addInputTypeValidation = false
+  addIncludeTypes        = false
+  addSelectTypes         = false
+  useTypeAssertions      = true //3.21.1問題
+
+  useMultipleFiles = true //これファイル分割
+  writeBarrelFiles = false //バレるファイルを作らない
+}
