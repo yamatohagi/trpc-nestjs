@@ -1,7 +1,6 @@
-/* eslint-disable react/no-unescaped-entities */
 import * as React from 'react';
 // next
-import Document, {Html, Head, Main, NextScript, DocumentProps, DocumentContext} from 'next/document';
+import Document, {Html, Head, Main, NextScript, DocumentContext} from 'next/document';
 import {AppType} from 'next/app';
 
 //
@@ -21,31 +20,17 @@ const Meta = () => (
   <>
     {/* PWA primary color */}
     <meta name="theme-color" />
-    <meta
-      name="description"
-      content="ジムイキタイ！クライマー同士をくっつけるClimb Bond！ ビレイパートナーの募集ややセッションできる仲間を増やしたり、ジムの情報を交換するWebサービスです。"
-    />
-    <meta
-      name="keywords"
-      content="イキタイ,壁登りたい,ジムイキタイ,クライマー,コミュニティ,ボルダリング,壁登り,ビレイパートナー,リードクライミング,外岩,パートナー探し,クライムボンド,クライム ボンド,クライム　ボンド,ボルダリングジム,クライミングジム,クライミング"
-    />
-    <meta name="author" content="Climb Bond" />
+
+    <meta name="author" content="Bond" />
   </>
 );
 
-interface MyDocumentProps extends DocumentProps {
-  emotionStyleTags: JSX.Element[];
-}
-
-export default function MyDocument({emotionStyleTags}: MyDocumentProps) {
+export default function MyDocument() {
   return (
     <Html lang="ja">
       <Head>
         <Favicon />
         <Meta />
-        {/* Emotion */}
-        <meta name="emotion-insertion-point" content="" />
-        {emotionStyleTags}
       </Head>
       <body>
         <Main />

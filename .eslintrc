@@ -4,9 +4,9 @@
     "browser": true,
     "es2021": true
   },
-  "plugins": ["@typescript-eslint", "prettier"],
-  "extends": ["airbnb", "airbnb-typescript", "airbnb/hooks", "prettier"],
-  "parser": "@typescript-eslint/parser",
+  "plugins": ["prettier"],
+  "extends": ["prettier"],
+
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true

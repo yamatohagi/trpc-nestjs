@@ -1,4 +1,3 @@
-import {Mutation, MutationCache} from '@tanstack/react-query';
 import {httpBatchLink, loggerLink} from '@trpc/client';
 import {createTRPCNext} from '@trpc/next';
 import trpcOptions from 'prisma/trpcOptions';
