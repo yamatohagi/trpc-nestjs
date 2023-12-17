@@ -1,9 +1,5 @@
-import Head from 'next/head';
-
 import {AppProps, AppType} from 'next/app';
-
 import {trpc} from 'src/utils/trpc';
-
 import {NextPage} from 'next';
 
 type NextPageWithLayout = NextPage & {
@@ -19,9 +15,6 @@ const MyApp: AppType = (props: any) => {
 
   return (
     <>
-      {/* <Head>
-        <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=0" />
-      </Head> */}
       <Component {...pageProps} />
     </>
   );

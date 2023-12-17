@@ -33,7 +33,21 @@
   "files.exclude": {
     "**/.next": true,
     "**/node_modules": true,
-    "out": true
+    "out": true,
+
+    "next-env.d.ts": true,
+    "tsconfig.json": true,
+    "README.md": true,
+    "next.config.js": true,
+    ".eslintignore": true,
+    ".prettierignore": true,
+    ".prettierrc": true,
+    "package.json": true,
+    "package-lock.json": true,
+    ".env": true,
+    ".eslintrc": true,
+    ".gitignore": true,
+
   },
   "cSpell.words": [
     "Adca",
